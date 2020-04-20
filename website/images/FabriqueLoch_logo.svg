@@ -13,11 +13,11 @@
    id="Calque_1"
    x="0px"
    y="0px"
-   viewBox="0 0 131.19487 182.18284"
+   viewBox="0 0 131.19488 182.18284"
    xml:space="preserve"
    sodipodi:docname="FabriqueLoch_logo.svg"
-   width="131.19487"
-   height="182.18285"
+   width="62.473751"
+   height="86.753731"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
    id="metadata59"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -34,21 +34,22 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="1920"
-   inkscape:window-height="986"
+   inkscape:window-width="1680"
+   inkscape:window-height="987"
    id="namedview55"
    showgrid="false"
-   inkscape:zoom="0.77493796"
-   inkscape:cx="-64.115497"
-   inkscape:cy="100.6971"
-   inkscape:window-x="-11"
-   inkscape:window-y="-11"
+   inkscape:zoom="2.1918555"
+   inkscape:cx="-8.344184"
+   inkscape:cy="-11.601158"
+   inkscape:window-x="1912"
+   inkscape:window-y="24"
    inkscape:window-maximized="1"
    inkscape:current-layer="Calque_1"
    fit-margin-top="0"
    fit-margin-left="0"
    fit-margin-right="0"
-   fit-margin-bottom="0" />
+   fit-margin-bottom="0"
+   scale-x="2.1" />
 <style
    type="text/css"
    id="style2">
@@ -106,6 +107,7 @@
    id="text23"
    style="font-size:170px;font-family:NovaRound;display:inline">ALGORIC</text>
 
+
 </g>
 <g
    id="Calque_3"
@@ -117,6 +119,7 @@
    class="st6 st9 st10 st11"
    id="text26"
    style="font-size:200px;font-family:MedulaOne-Regular;letter-spacing:50;display:inline">ALGORIC</text>
+
 
 </g>
 
