@@ -1,385 +1,218 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>BlueBanquise Documentation &mdash; BlueBanquise Documentation 1.0.1 documentation</title>
-  
+<html class="has-navbar-fixed-top"><head>
+<title>BlueBanquise - Home</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/bulma-docs.min.css">
+  <script defer src="/js/all.js"></script>
+<!-- from https://codepen.io/hunzaboy/pen/yoPKQW -->
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  // Check if there are any nav burgers
+  if ($navbarBurgers.length > 0) {
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+  });
+	</script>
+  <style>
+  .navbar-item.is-mega {
+    position: static;
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'./',
-              VERSION:'1.0.1',
-              LANGUAGE:'None',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1. Introduction" href="introduction.html" /> 
+    .is-mega-menu-title {
+      margin-bottom: 0;
+      padding: .375rem 1rem;
+    }
+  }
+  </style>
 </head>
+  <body class="layout-default">
 
-<body class="wy-body-for-nav">
+    <nav class="navbar has-shadow is-spaced is-fixed-top">
+      <div class="container">
 
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="#" class="icon icon-home"> BlueBanquise Documentation
-          
-
-          
-            
-            <img src="_static/logo.png" class="logo" alt="Logo"/>
-          
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bluebanquise.com">
+            <img src="/images/BlueBanquise_logo_large.svg" alt="BlueBanquise, an Ansible stack">
           </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
+          <a class="navbar-item is-hidden-desktop" href="https://github.com/bluebanquise/bluebanquise" target="_blank">
+            <span class="icon" style="color: #333;">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <div class="navbar-burger burger" data-target="navMenubd-example"> 
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vocabulary.html">2. Vocabulary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install_first_management.html">3. Install first management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="learn_ansible.html">4. Learn Ansible</a></li>
-<li class="toctree-l1"><a class="reference internal" href="configure_bluebanquise.html">5. Configure BlueBanquise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_bluebanquise.html">6. Deploy BlueBanquise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="multiple_icebergs.html">7. Manage multiple icebergs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="roles.html">8. Roles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="references.html">9. References</a></li>
-</ul>
-
-            
-          
+        <div id="navMenubd-example" class="navbar-menu">
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <!-- <a class="navbar-link " href="project.html"> -->
+                <div class="navbar-link">
+                The stack
+                </div>
+              <!-- </a> -->
+              <div class="navbar-dropdown ">
+                <a class="navbar-item " href="/the_stack/the_project.html">
+                  The project
+                </a>
+                <a class="navbar-item " href="/the_stack/features.html">
+                  Features
+                </a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <!-- <a class="navbar-link " href="https://bluebanquise.com/project.html"> -->
+                <div class="navbar-link">
+                Resources
+                </div>
+              <!-- </a> -->
+              <div class="navbar-dropdown ">
+                <a class="navbar-item " href="/resources/documentation.html">
+                  Documentation
+                </a>
+                <a class="navbar-item " href="/resources/download.html">
+                  Download
+                </a>
+              </div>
+            </div>
+            <a class="navbar-item " href="/about.html">
+              About
+            </a>
+            <div class="navbar-end">
+              <a class="navbar-item is-hidden-desktop-only" href="https://github.com/bluebanquise/bluebanquise" target="_blank">
+                <span class="icon" style="color: #333;">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">BlueBanquise Documentation</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="#">Docs</a> &raquo;</li>
-        
-      <li>BlueBanquise Documentation</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="bluebanquise-documentation">
-<h1>BlueBanquise Documentation<a class="headerlink" href="#bluebanquise-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Welcome on BlueBanquise documentation.</p>
-<p>This documentation provides information on:</p>
-<ul class="simple">
-<li>How to use Ansible (generic, not related to the stack)</li>
-<li>How to deploy, configure, and maintain BlueBanquise on different scenario clusters</li>
-<li>How to develop your own roles for the stack</li>
-</ul>
-<p>Details are also given for each Ansible role of the stack.</p>
-<p>Please report us any issues in this documentation.</p>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vocabulary.html">2. Vocabulary</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="vocabulary.html#ansible-vocabulary">2.1. Ansible vocabulary</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="vocabulary.html#host">2.1.1. Host</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vocabulary.html#group">2.1.2. Group</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vocabulary.html#variables">2.1.3. Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vocabulary.html#inventory-roles-and-playbooks">2.1.4. Inventory, roles, and playbooks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vocabulary.html#variables-precedence">2.1.5. Variables precedence</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vocabulary.html#merge">2.1.6. Merge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vocabulary.html#jinja2">2.1.7. Jinja2</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="vocabulary.html#stack-vocabulary">2.2. Stack vocabulary</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="vocabulary.html#icebergs">2.2.1. Icebergs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="vocabulary.html#equipment-profiles">2.2.2. Equipment profiles</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="install_first_management.html">3. Install first management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install_first_management.html#install-operating-system">3.1. Install operating system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_first_management.html#prepare-for-ansible">3.2. Prepare for Ansible</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="install_first_management.html#repositories">3.2.1. Repositories</a></li>
-<li class="toctree-l3"><a class="reference internal" href="install_first_management.html#install-ansible">3.2.2. Install Ansible</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="learn_ansible.html">4. Learn Ansible</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="learn_ansible.html#minimal-inventory">4.1. Minimal inventory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="learn_ansible.html#ansible-commands">4.2. Ansible commands</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#ansible">4.2.1. ansible</a></li>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#ansible-inventory">4.2.2. ansible-inventory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#ansible-playbook">4.2.3. ansible-playbook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#debug">4.2.4. Debug</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="learn_ansible.html#variables-and-groups">4.3. Variables and groups</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#adding-variables">4.3.1. Adding variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#configuring-groups">4.3.2. Configuring groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#variables-precedence">4.3.3. Variables precedence</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="learn_ansible.html#roles-and-playbooks">4.4. Roles and playbooks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#role">4.4.1. Role</a></li>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#playbook">4.4.2. Playbook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#jinja2">4.4.3. Jinja2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="learn_ansible.html#task-again">4.4.4. Task again</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="configure_bluebanquise.html">5. Configure BlueBanquise</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="configure_bluebanquise.html#get-bluebanquise">5.1. Get BlueBanquise</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configure_bluebanquise.html#configure-inventory">5.2. Configure inventory</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="configure_bluebanquise.html#important-before-we-start">5.2.1. Important before we start</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configure_bluebanquise.html#check-example-inventory">5.2.2. Check example inventory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configure_bluebanquise.html#review-nodes">5.2.3. Review nodes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configure_bluebanquise.html#review-logical-networks">5.2.4. Review logical networks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configure_bluebanquise.html#review-general-configuration">5.2.5. Review general configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configure_bluebanquise.html#review-default-parameters">5.2.6. Review Default parameters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configure_bluebanquise.html#review-groups-parameters">5.2.7. Review groups parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_bluebanquise.html">6. Deploy BlueBanquise</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="deploy_bluebanquise.html#management-configuration">6.1. Management configuration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="deploy_bluebanquise.html#get-management1-playbook">6.1.1. Get management1 playbook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="deploy_bluebanquise.html#ansible-playbook">6.1.2. Ansible-playbook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="deploy_bluebanquise.html#apply-management1-configuration">6.1.3. Apply management1 configuration</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="deploy_bluebanquise.html#pxe">6.2. PXE</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="deploy_bluebanquise.html#bootset">6.2.1. bootset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="deploy_bluebanquise.html#ssh-public-key">6.2.2. SSH public key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="deploy_bluebanquise.html#os-deployment">6.2.3. OS deployment</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="deploy_bluebanquise.html#apply-other-nodes-configuration">6.3. Apply other nodes configuration</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="multiple_icebergs.html">7. Manage multiple icebergs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="multiple_icebergs.html#iceberg-elements">7.1. Iceberg elements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="multiple_icebergs.html#configuring-top-iceberg">7.2. Configuring top iceberg</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="multiple_icebergs.html#understanding-mechanism">7.2.1. Understanding mechanism</a></li>
-<li class="toctree-l3"><a class="reference internal" href="multiple_icebergs.html#enabling-iceberg-mechanism">7.2.2. Enabling iceberg mechanism</a></li>
-<li class="toctree-l3"><a class="reference internal" href="multiple_icebergs.html#create-iceberg-1">7.2.3. Create iceberg 1</a></li>
-<li class="toctree-l3"><a class="reference internal" href="multiple_icebergs.html#create-iceberg-2">7.2.4. Create iceberg 2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="multiple_icebergs.html#deploy-management-configuration">7.2.5. Deploy management configuration</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="roles.html">8. Roles</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="roles.html#core">8.1. CORE</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#ansible">8.1.1. Ansible</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#conman">8.1.2. Conman</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#display-tuning">8.1.3. Display_tuning</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#dhcp-server">8.1.4. DHCP server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#dns-server">8.1.5. DNS server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#dns-client">8.1.6. DNS client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#hosts-file">8.1.7. Hosts file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#log-server">8.1.8. Log server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#log-client">8.1.9. Log client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#nfs-server">8.1.10. NFS server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#nfs-client">8.1.11. NFS client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#nic">8.1.12. NIC</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#pxe-stack">8.1.13. PXE Stack</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#repositories-server">8.1.14. Repositories server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#repositories-client">8.1.15. Repositories client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#set-hostname">8.1.16. Set Hostname</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#ssh-master">8.1.17. SSH master</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#ssh-slave">8.1.18. SSH slave</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#time-server">8.1.19. Time server</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="roles.html#advanced-core">8.2. ADVANCED CORE</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#advanced-dhcp-server">8.2.1. Advanced DHCP server</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="roles.html#addons">8.3. ADDONS</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#cloning">8.3.1. Cloning</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#clustershell">8.3.2. ClusterShell</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#diskless">8.3.3. Diskless</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#ofed">8.3.4. OFED</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#ofed-sm">8.3.5. OFED_SM</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#openldap-client">8.3.6. OpenLDAP client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#openldap-server">8.3.7. OpenLDAP server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#nic-with-nmcli">8.3.8. NIC with nmcli</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#prometheus-server">8.3.9. Prometheus server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#prometheus-client">8.3.10. Prometheus client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#report">8.3.11. Report</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#slurm">8.3.12. Slurm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roles.html#users-basic">8.3.13. Users basic</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="references.html">9. References</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="references.html#graphics">9.1. Graphics</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
-</ul>
-</div>
-
-
-           </div>
-           
+    <section class="hero is-medium intro">
+      <div class="hero-body">
+        <div class="container">
+          <div class="intro-columns">
+            <div class="intro-column is-content">
+              <div class="intro-content">
+                <h1 class="title intro-title">
+                  <strong>BlueBanquise</strong> is an open source cluster deployement and management stack.
+                </h1><br>
+                <p class="subtitle is-4">
+                  <strong>Ansible</strong> based, fully modular, simple.
+                </p>
+              </div>
+            </div>
+            <div class="intro-column is-content intro-title">
+              <div style="text-align:center;" height="100px">
+                <img src="images/multiple_icebergs.svg" alt="BlueBanquise Logo">
+              </div>
+            </div>
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="introduction.html" class="btn btn-neutral float-right" title="1. Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-    </div>
-  
+        </div>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, Benoît Leveugle, Johnny Keats
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
+        <div class="bd-focus">
+          <nav class="columns">
+            <a class="bd-focus-item column has-text-centered" href="/the_stack/features.html#modernity">
+              <p class="title is-4">
+                <strong>Modern</strong>
+              </p>
+              <p class="subtitle is-6"><strong>Ansible</strong> and <strong>Python</strong> based</p>
+              <figure class="bd-focus-icon">
+                <span class="bd-focus-desktop icon is-large" style="color: #333;">
+                  <i class="fab fa-3x fa-python"></i>
+                </span>
+              </figure>
+            </a>
+            <a class="bd-focus-item column has-text-centered" href="/the_stack/features.html#compatibility">
+              <p class="title is-4">
+                <strong>Compatible</strong>
+              </p>
+              <p class="subtitle is-6">
+                Works on <strong>many</strong> kind of hardware
+              </p>
+              <figure class="bd-focus-icon">
+                <span class="bd-focus-mobile icon is-large" style="color: #333;">
+                  <i class="fas fa-1x fa-laptop"></i>
+                </span>
+                <span class="bd-focus-tablet icon is-large" style="color: #333;">
+                  <i class="fas fa-2x fa-desktop"></i>
+                </span>
+                <span class="bd-focus-desktop icon is-large" style="color: #333;">
+                  <i class="fas fa-3x fa-server"></i>
+                </span>
+              </figure>
+            </a>
+            <a class="bd-focus-item column has-text-centered" href="/the_stack/features.html#modularity">
+              <p class="title is-4">
+                <strong>Modular</strong>
+              </p>
+              <p class="subtitle is-6">
+                Build your <strong>own</strong> cluster
+              </p>
+              <figure class="bd-focus-cubes bd-focus-icon">
+                <span class="bd-focus-cube bd-focus-cube-1 icon is-large" style="color: #333;">
+                  <i class="fas fa-2x fa-cube"></i>
+                </span>
+                <span class="bd-focus-cube bd-focus-cube-2 icon is-large" style="color: #333;">
+                  <i class="fas fa-2x fa-cube"></i>
+                </span>
+                <span class="bd-focus-cube bd-focus-cube-3 icon is-large" style="color: #333;">
+                  <i class="fas fa-2x fa-cube"></i>
+                </span>
+              </figure>
+            </a>
+            <a class="bd-focus-item column has-text-centered" href="https://github.com/bluebanquise/" target="_blank">
+              <p class="title is-4">
+                <strong>Free</strong>
+              </p>
+              <p class="subtitle is-6">
+                Open source on <strong>GitHub</strong>
+              </p>
+              <figure class="bd-focus-icon">
+                <span class="bd-focus-github icon is-large" style="color: #333;">
+                  <i class="fab fa-3x fa-github"></i>
+                </span>
+              </figure>
+            </a>
+          </nav>
         </div>
       </div>
-
+      <section class="bd-partnrs-list">
+        <div class="bd-partner bd-is-sponsor">
+          <p class="bd-partner-title has-text-centered">
+          Project partners
+          <div class="bd-partner-sponsors">
+            <div class="bd-partner-sponsor">
+              <a class="bd-sponsor-item" href="http://www.bmuyl.com/" target="_blank" rel="nofollow" title="">
+                <img src="images/partners_BMD.svg" alt="" height="40">
+              </a>
+            </div>
+            <div class="bd-partner-sponsor">
+              <a class="bd-sponsor-item" href="https://www.lafabriqueduloch.org" target="_blank" rel="nofollow" title="">
+                <img src="images/FabriqueLoch_logo.svg" alt="" height="100">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+  </body>
 </html>
